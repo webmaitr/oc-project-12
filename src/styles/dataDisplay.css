@@ -1,0 +1,62 @@
+.display-chart-area {
+  display: grid;
+  grid-template-columns: repeat(4, 258px);
+  grid-template-rows: repeat(2, auto);
+  gap: 36px;
+}
+
+.display-chart-area div:nth-child(1) {
+  grid-column: 1 / 4;
+  grid-row: 1 / 3;
+}
+
+.sideCard img {
+  width: 60px;
+  height: 60px;
+}
+.sideCard p {
+  margin: 0;
+}
+.sideCard p:first-of-type {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.sideCard {
+  grid-column: 4 / 5;
+  display: flex;
+  align-items: center;
+  background-color: #FBFBFB;
+  border-radius: 5px;
+  padding: 32px;
+  gap: 24px;
+}
+.sideCard.Calories {
+  grid-row-start: 1;
+}
+.sideCard.Proteines {
+  grid-row-start: 2;
+}
+.sideCard.Glucides {
+  grid-row-start: 3;
+}
+.sideCard.Lipides {
+  grid-row-start: 4;
+}
+
+.bottomcards {
+  grid-row: 3 / 5;
+}
+.bottomcards.sessions {
+  grid-column: 1 / 2;
+}
+.bottomcards.perf {
+  grid-column: 2 / 3;
+}
+.bottomcards.score {
+  grid-column: 3 / 4;
+}
+
+/* .sessions .recharts-surface {
+  background-color: red;
+} */

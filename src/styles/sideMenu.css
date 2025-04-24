@@ -1,0 +1,31 @@
+.vertical-navigation {
+  background-color: #020203;
+  display: flex;
+  flex-direction: column;
+  width: 117px;
+  height: calc(100vh - 91px);
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+.sidenav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.navIcon {
+  width: 64px;
+}
+
+.copyright {
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  margin-bottom: 50%;
+}
