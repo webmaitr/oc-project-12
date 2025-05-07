@@ -1,6 +1,5 @@
 import Navbar from './components/Navbar';
 import SideMenu from './components/SideMenu';
-import CentralSectionMock from './components/CentralSectionMock';
 import CentralSection from './components/CentralSection';
 import './App.css';
 import { useContext } from 'react';
@@ -14,10 +13,7 @@ function App() {
       <Navbar />
       <main>
         <SideMenu />
-        {mock?
-        <CentralSectionMock />:
         <CentralSection />
-        }
       </main>
     </>
   );

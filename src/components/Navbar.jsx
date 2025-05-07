@@ -1,12 +1,10 @@
-import Logo from './../assets/logo.svg'
-import './../styles/navbar.css'
+import Logo from './../assets/logo.svg';
+import './../styles/navbar.css';
 
-function Navbar () {
+function Navbar() {
   return (
     <header className="topPage">
-
-        <img className="logo" src={Logo} alt="Logo SportSee" />
-
+      <img className="logo" src={Logo} alt="Logo SportSee" />
 
       <ul className="topnav">
         <li>Accueil</li>
@@ -15,7 +13,7 @@ function Navbar () {
         <li>Communauté</li>
       </ul>
     </header>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

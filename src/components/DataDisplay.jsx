@@ -9,12 +9,11 @@ function DataDisplay() {
   const { userId } = useContext(IdContext);
   return (
     <div className="display-chart-area">
-      <CentralCard userId={userId} />
+      <CentralCard />
+      <RightSideCards />
       <BottomCards userId={userId} />
-      <RightSideCards userId={userId} />
     </div>
-  )
-  
+  );
 }
 
 export default DataDisplay;

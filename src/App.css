@@ -10,6 +10,8 @@ main {
 }
 
 .central-section {
-  padding: 68px 90px 88px 109px;
+  padding: 6.6vh 0 0 7.5vw;
+  max-height: calc(93.4vh - 91px);
+  max-width: calc(92.5vw - 117px);
 }
 

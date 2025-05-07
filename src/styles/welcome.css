@@ -1,4 +1,8 @@
-h1 {
+.welcome {
+  margin-bottom: 7.5vh;
+}
+
+.welcome h1 {
   font-size: 48px;
   font-weight: 500;
   margin-top: 0;
@@ -7,3 +11,4 @@ h1 {
 .firstname {
   color: #FF0101;
 }
+
