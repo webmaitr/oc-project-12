@@ -8,30 +8,9 @@ import {
   Legend,
   ResponsiveContainer
 } from 'recharts';
-import { getUserActivity } from './../data/GetDataFetch.js';
-import { useContext, useState, useEffect } from 'react';
-import { IdContext } from './IdContext.jsx';
 
-function CentralCard() {
-  const { userId, mock } = useContext(IdContext);
-  const [activity, setActivity] = useState(null);
-
-  useEffect(() => {
-    async function fetchData() {
-      try {
-        const data = await getUserActivity(userId, mock);
-        setActivity(data);
-      } catch (error) {
-        console.error(error);
-      }
-    }
-
-    fetchData();
-  }, [userId, mock]);
-  if (!activity) {
-    return;
-  }
-  const userSessions = activity.sessions;
+function CentralCard({ userActivity }) {
+  const userSessions = userActivity;
 
   const modifData = [];
   for (let i = 0; i < userSessions.length; i++) {

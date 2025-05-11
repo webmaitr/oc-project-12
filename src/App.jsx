@@ -7,9 +7,8 @@ import { IdContext } from './components/IdContext';
 
 function App() {
   const { mock } = useContext(IdContext);
-  console.log(mock)
   return (
-    <> 
+    <>
       <Navbar />
       <main>
         <SideMenu />
